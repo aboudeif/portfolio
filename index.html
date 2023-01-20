@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/project-card.css">
+    <link rel="stylesheet" href="assets/css/Projects-Grid.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="row" style="text-align: center; font-family: 'Courier New', Courier, monospace;">
+        <div class="col">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div>
+                <img src="assets/img/a2.png" style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid var(--bs-light);" />
+            <br />
+                <h1 class="text-center mt-4" >Abdallah Aboudeif Portfolio</h1>
+                <p class="m-5 pt-3">This portfolio contains a variety of web projects developed in HTML, CSS, JavaScript, Laravel, PHP, Nodejs and Reactjs. The projects range from simple static websites to complex web applications. </p>
+            </div>
+            </div>
+        </div>
+            <!-- <label class="form-label" style="background: var(--bs-gray-600);border-radius: 25px;padding: 5px 15px;color: var(--bs-light);margin: 5px;">Projects</label> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="border border-0 overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="p-4 p-md-5" style="width: 100%;">
+                            <h2 class="fw-bold mb-2" style="font-size: 1rem;text-align: left;">DOMESTIC TOURISM SYSTEM</h2>
+                            <p class="mb-4" style="text-align: left;">A system for an Egyptian domestic tourism company. The system aims to offer short to medium travel by visiting one place or more inside one or more cities, handling tourists, hostels, transportation, tour guides, marketing media, partners, hostels, and transport owners. and advertising companies. Control travels and extract detailed financial reports.</p>
+                            <!-- tags -->
+                            <div class="d-flex flex-wrap">
+                                <div class="badge bg-dark bg-opacity-75 rounded-circle me-1 mb-1">Java</div>
+                                <div class="badge bg-dark bg-opacity-75 rounded-circle me-1 mb-1">JavaFX</div>
+                                <div class="badge bg-dark bg-opacity-75 rounded-circle me-1 mb-1">T-SQL</div>
+                                <div class="badge bg-dark bg-opacity-75 rounded-circle me-1 mb-1">OOP</div>
+                                <div class="badge bg-dark bg-opacity-75 rounded-circle me-1 mb-1">MVC Pattern</div>
+                            </div>
+                            <div class="my-3"><a class="btn text-decoration-underline  btn-lg me-1" role="button" href="#" style="font-size: 0.75rem;">Source Code</a><a class="btn btn-success rounded-circle btn-lg me-1" role="button" href="#" style="font-size: 0.75rem;">Preview</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-first order-md-last p-2" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="assets/img/DomesticTourismSystem/3.PNG"></div>
+                </div>
+                <!-- pagination to preview more pictures -->
+                <div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="btn-group" role="group">
+                            <button id="3" class="btn btn-outline-secondary m-1" type="button">1</button>
+                            <button id="5" class="btn btn-outline-secondary m-1" type="button">2</button>
+                            <button id="19" class="btn btn-outline-secondary m-1" type="button">3</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        // pagination to preview more pictures
+        let img = document.querySelector('.col-md-4 img');
+        let btns = document.querySelectorAll('.btn-group button');
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                img.src = `assets/img/DomesticTourismSystem/${btn.id}.PNG`;
+            });
+        });
+    </script>
+</body>
+
+</html>
